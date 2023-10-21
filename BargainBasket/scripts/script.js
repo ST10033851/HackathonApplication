@@ -1,4 +1,4 @@
-
+//Start of db connection
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const uri = "mongodb+srv://bargainbasket:bargainbasket123@bargainbasketcluster.gq7cemq.mongodb.net/?retryWrites=true&w=majority";
 
@@ -21,3 +21,7 @@ async function run() {
   }
 }
 run().catch(console.dir);
+
+//End of db connection
+
+//Start of Login Page
