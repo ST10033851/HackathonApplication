@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap">
     <link rel="stylesheet" href="../styles.css">
     <link rel = "stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="/BargainBasket/scripts/HistoryPage.js"></script>
     <title>History</title>
 </head>
 <style>
@@ -17,6 +18,7 @@ body{
 .Savedgrocerylistsbanner{ 
     position: absolute;
     top:200px;
+    left: 10px;
 }
 
 .Rectangle120
@@ -48,8 +50,37 @@ border-radius: 25px
     font-size: 23.42px;
     font-family: Montserrat; 
     font-weight: 600; 
-    word-wrap: break-word
+    word-wrap: break-word;
 }
+
+.Displaygrocerylists{
+  width: 700px; 
+  height: auto;
+  top: 200px;
+  left: 474px; 
+  position:absolute;
+  border-radius: 25px;
+  background-color: #C1DCDC;
+  display: flex;
+  flex-direction: column;
+}
+
+.grocery-list {
+  width: 700px;
+  height: 100px;
+  top: 200px;
+  left: 474px;
+  position: absolute;
+  border-radius: 25px;
+  background-color: #C1DCDC;
+}
+
+.grocery-list-item {
+  padding: 10px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
 </style>
 <body style="padding-top: 0px; margin-top: 0px;">
   <header class="header">
@@ -71,8 +102,8 @@ border-radius: 25px
         <a href="AboutUsPage.html">About </a>
         <a href="#Contact">Contact </a>
 
-        <a href=""> <img src="/BargainBasket/Images/basket.png" height=50 width="60" alt=""></a>
-        <a href=""> <img src="/BargainBasket/Images/user.png" height=40 width="40" alt=""></a>
+        <a href="#"> <img src="/BargainBasket/Images/basket.png" height=50 width="60" alt=""></a>
+        <a href="ProfilePage.html"> <img src="/BargainBasket/Images/user.png" height=40 width="40" alt=""></a>
     </nav>
 </header>
     <div class="Savedgrocerylistsbanner">
@@ -80,6 +111,11 @@ border-radius: 25px
         <img class="cutlery" src="/BargainBasket\Images\cutlery.png"/>
         <div class="SavedGroceryListS">Saved Grocery Lists :</div>
     </div>
+    <br>
+    <div class="Displaygrocerylists">
+      <!-- The content will be generated here using JavaScript --> 
+      <br>
+    </div>  
 </body>
 </html>
 
