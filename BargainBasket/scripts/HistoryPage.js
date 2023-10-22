@@ -1,8 +1,9 @@
 window.onload = function () {
+    //Need to connect to database here and displat database GroceryList names and ingredients
     const groceryLists = [
-        ['Milk', 'Eggs', 'Bread'],
-        ['Apples', 'Bananas', 'Oranges'],
-        ['Apples', 'Bananas', 'Oranges'],
+        ['GroceryList1', 'Eggs', 'Bread'],
+        ['GroceryList2', 'Bananas', 'Oranges', 'Meat', 'Fish'],
+        ['GroceryList3', 'Bananas', 'Oranges'],
     ];
 
     const groceryListDiv = document.querySelector('.Displaygrocerylists');

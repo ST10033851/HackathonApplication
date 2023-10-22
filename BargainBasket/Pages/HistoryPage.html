@@ -16,8 +16,8 @@ body{
 }
 
 .Savedgrocerylistsbanner{ 
-    position: absolute;
-    top:200px;
+    position: relative;
+    top: 120px;
     left: 10px;
 }
 
@@ -26,7 +26,7 @@ body{
 height: 67px; 
 left: 0px; 
 top: 0px; 
-position: absolute; 
+position: relative; 
 background: #C1DCDC; 
 border-radius: 25px
 }
@@ -35,16 +35,16 @@ border-radius: 25px
     width: 43.20px; 
     height: 35px; 
     left: 18.40px; 
-    top: 16px; 
-    position: absolute; 
+    top: -50px; 
+    position: relative; 
 }
 
 .SavedGroceryListS{
     width: 375px; 
     height: 35px; 
     left: 21px; 
-    top: 16px; 
-    position: absolute; 
+    top: -90px; 
+    position: relative; 
     text-align: center; 
     color: black; 
     font-size: 23.42px;
@@ -56,9 +56,9 @@ border-radius: 25px
 .Displaygrocerylists{
   width: 700px; 
   height: auto;
-  top: 200px;
+  top: 0px;
   left: 474px; 
-  position:absolute;
+  position:relative;
   border-radius: 25px;
   background-color: #C1DCDC;
   display: flex;
@@ -70,19 +70,21 @@ border-radius: 25px
   height: 100px;
   top: 200px;
   left: 474px;
-  position: absolute;
+  position: relative;
   border-radius: 25px;
   background-color: #C1DCDC;
 }
 
 .grocery-list-item {
   padding: 10px;
-  border: 1px solid black;
-  margin-bottom: 10px;
+  border-bottom: 5px solid rgb(255, 255, 255);
+  margin-bottom: 0px;
 }
 
 </style>
 <body style="padding-top: 0px; margin-top: 0px;">
+<section>
+  <!-- Header -->
   <header class="header">
 
     <a href="#" class="logo">
@@ -106,16 +108,42 @@ border-radius: 25px
         <a href="ProfilePage.html"> <img src="/BargainBasket/Images/user.png" height=40 width="40" alt=""></a>
     </nav>
 </header>
+<!-- Header -->
+
+<!-- Display Grocery Banner and GroceryLists -->
+<div>
     <div class="Savedgrocerylistsbanner">
         <div class="Rectangle120"></div>
         <img class="cutlery" src="/BargainBasket\Images\cutlery.png"/>
         <div class="SavedGroceryListS">Saved Grocery Lists :</div>
     </div>
+</div>
+
+<div>
     <br>
     <div class="Displaygrocerylists">
       <!-- The content will be generated here using JavaScript --> 
       <br>
-    </div>  
+    </div> 
+
+  </div> 
+</section>
+
+  
+<!-- footer -->
+<div class="footercontainer">
+<section class="footer">
+
+  <a href="">
+      <img src="/BargainBasket/Images/bargain-basket-high-resolution-logo-color-on-transparent-background 2.png" alt="" height="90" width="500">
+  </a>
+  
+  <hr width="100%"/>
+
+  <h1 class="credit"> C 2023 Bargain Basket-all rights reserved</h1>
+</section>
+</div>
+<!-- footer -->
 </body>
 </html>
 
