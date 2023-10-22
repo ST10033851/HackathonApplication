@@ -381,13 +381,17 @@ body{
   display: flex;
   justify-content: center;
   align-items: flex-start;
-
   background-color: #f0f0f0; 
 }
 
-.logo {
-  width: 50%;
-  height: auto; 
+.Logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12vh;
+}
+.Logo img{
+  width: 400px;
 }
 .form {
   flex-direction: column;
