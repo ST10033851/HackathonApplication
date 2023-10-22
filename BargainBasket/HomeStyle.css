@@ -1,0 +1,540 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #E5E5E5;
+    font-family: Poppins;
+  }
+  
+  /* Style for the navigation bar */
+  .navbar {
+    display: flex;
+    align-items: center;
+    height: 60.75px;
+    padding-left: 70px;
+    padding-right: 1338px;
+  }
+  
+  /* Style for the logo image */
+  .logo {
+    width: 346.78px;
+    height: 60.75px;
+    margin-right: 170px; /* Adjust the distance between the logo and the first link */
+    margin-top: 25px;
+  }
+  
+  /* Style for navigation links */
+  .nav-link {
+    text-decoration: none;
+    color: #00054B; /* Set your link color here */
+    font-size: 28px;
+    padding: 0 20px; /* Adjust spacing around the links */
+    margin-top: 18px;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s; /* Smooth color transition on hover */
+  }
+  
+  .nav-link:hover {
+    color: #22A7A6; /* Change color on hover, adjust as needed */
+  }
+  
+  /* Style for the icon image */
+  .icon {
+    width: 54px;
+height: 55px;
+    margin-left: 4px;
+    margin-top: 24px;
+  }
+  .cart{
+    width: 89px;
+    height: 85px;
+    margin-left: 150px;
+    margin-top: 14px;
+  }
+  
+  /* Add spacing between the logo and links */
+  .nav-link:not(:first-child) {
+    margin-left: 20px; /* Adjust the distance between links */
+  }
+  
+  .box-option {
+    margin-top: 40px;
+    width: 1329.75px;
+    height: 366.19px;
+    background: #C1DCDC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 27px;
+    margin-left: 75px;
+    padding: 20px;
+  }
+  
+  .box-option h1 {
+    color: #000;
+    font-size: 24px;
+    text-align: left;
+    font-size: 69px;
+    width: 1200px;
+    height: 235.41px;
+    background-color: #C1DCDC;
+  }
+  
+  .search {
+    background-color: white;
+    height: 54px;
+    width: 450px;
+    border-radius: 12px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+  }
+  
+  #Basket {
+    width: 247.22px;
+    height: 230px;
+    background-color: #C1DCDC;
+    margin-top: 50px;
+    margin-left: 670px;
+    margin-bottom: 90px;
+  }
+  
+  .search-box {
+    display:block;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .search-input {
+    border: none;
+    background-color: white;
+    padding: 5px; /* Adjust as needed */
+    width: 400px; /* Leave this width as you've set it in your HTML */
+    text-indent: 10px; /* Adjust as needed to push text to the right */
+  }
+  
+  
+  .search-button {
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .search-button img {
+    height: 40.5px;
+    width: 40.5px;
+    background-color: #C1DCDC;
+    border-radius: 10px;
+    margin-left: 230px;
+  }
+  .category {
+    position: relative; /* Add relative positioning to the parent container */
+  }
+
+  .category h1 {
+    margin-top: 40px;
+    margin-left: 75px;
+    font-size: 47.25px;
+  }
+
+  .see-more-button {
+    width: 166.22px;
+    height: 58.22px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 58.22px; /* Vertically center text */
+    position: absolute;
+    border-radius: 24px;
+    left: 1280px; /* Adjust this value to position the button where you want */
+    top: 10px; /* Align the button to the top of the parent container */
+    background-color: #C1DCDC; /* Button background color */
+    color: #000000; /* Text color */
+    text-decoration: none; /* Remove underline from the link */
+  }
+  .categories {
+    text-align: center;
+    position: relative;
+  }
+
+  .categories img {
+    width: 383.906px;
+    height: 227.813px;
+    flex-shrink: 0;
+    padding: 35px 55px;
+    margin-left: 75px;
+    opacity: 0.8; /* Adjust the opacity to make it slightly transparent */
+  }
+
+  .centered-text {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center precisely */
+    font-size: px;
+    background-color: transparent;
+    color: #000000; /* Text color */
+  }
+
+
+
+  .image-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 74px;
+}
+
+.image {
+    width: 383.906px;
+    height: 227.813px;
+    text-align: center;
+    text-decoration: none;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+    margin-right: 35px;
+}
+
+  
+  .image {
+    opacity: 0.8;
+    width: 383.906px;
+    height: 227.813px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 74px;
+    color: #000;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dairy {
+    background-image: url("Images/pexels-nastyasensei-821365.jpg");
+  }
+  
+  .carbs {
+    background-image: url("Images/pexels-engin-akyurt-7776547.jpg");
+  }
+  
+  .protein {
+    background-image: url("Images/pexels-dids-4294500.jpg");
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .benefits {
+    width: 618.469px;
+    height: 652px;
+    flex-shrink: 0;
+    border-radius: 27px;
+    background: #C1DCDC;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 40px;
+    margin-left: 130px;
+  }
+  .benefits h1{
+    display: flex;
+width: 618.469px;
+height: 95.344px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #000;
+background-color: #C1DCDC;
+text-align: center;
+font-family: Montserrat;
+font-size: 37.125px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+border-radius: 27px;
+  }
+  .benefits img{
+    width: 618.469px;
+height: 422.719px;
+flex-shrink: 0;
+background-color: #C1DCDC;
+  }
+  .benefits button{
+    width: 209.25px;
+height: 67.5px;
+flex-shrink: 0;
+background-color: #0D2C4C;
+border-radius: 27px;
+color: white;
+text-align: center;
+margin-left: 235px;
+font-size: 30.375px;
+border: none;
+  }
+  .doors-money {
+    display: flex;
+    flex-direction: column; /* Make children stack vertically */
+  }
+  
+  .door, .money {
+    width: 515.531px;
+    height: 305.438px;
+    border-radius: 27px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: #C1DCDC;
+    margin-top: 40px; /* Adjust the margin as needed to position the elements */
+    margin-left: 20px; /* Adjust the margin as needed to position the elements */
+  }
+  .door img{
+    width: 434.531px;
+    height: 232.875px;
+    background-color: #C1DCDC;
+    border-radius: 27px;
+    margin-left: 38px;
+  }
+  .door h1{
+    display: flex;
+width: 486.844px;
+height: 51.469px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;color: #000;
+
+text-align: center;
+background-color: #C1DCDC;
+margin-left: 25px;
+font-size: 34px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+  }
+  .money h1{
+display: flex;
+width: 486.844px;
+height: 51.469px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #000;
+border-radius: 27px;
+text-align: center;
+background-color: #C1DCDC;
+font-size: 34px;
+margin-left: 8px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+  }
+  .money img{
+    width: 459.844px;
+height: 232.875px;
+flex-shrink: 0;
+background-color: #C1DCDC;
+margin-left: 32px;
+  }
+  footer{
+    margin-top: 70px;
+    width: 100%;
+    height: 239.625px;
+    background-color: #0D2C4C;
+  }
+  footer img{
+    width: 723.094px;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    flex-shrink: 0;
+    background-color:#0D2C4C;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  footer p{
+    text-align: center;
+    background-color: #0D2C4C;
+    color: white;
+    font-size: 20.25px;
+font-style: normal;
+font-weight: 600;
+margin-top: 25px;
+padding-bottom: 36px;
+  }
+  hr{
+    width: 1026px;
+height: 4.219px;
+background: #E5E5E5;
+margin-left: 254px;
+  }
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 67px 74px; /* Adjust these values as needed */
+}
+
+.product {
+  width: calc(33.33% - 50px); /* 3 columns with 50px spacing between */
+  margin-bottom: 50px; /* Adjust this for the space between rows */
+  border-radius: 21.094px;
+  background: #FFF;
+  box-shadow: 0px 3.375px 3.375px 0px rgba(0, 0, 0, 0.25);
+}
+
+.shop {
+  width: 81.844px;
+  height: 12.591px;
+  border-radius: 21.094px;
+  background-color: #FFF;
+  margin: 10px 10px;
+}
+
+.quantity-button {
+  display: flex;
+  align-items: center;
+  margin-left: 230px;
+  width: 67.271px;
+  height: 34.001px;
+  border-radius: 5.906px;
+  border: 0.844px solid rgba(0, 0, 0, 0.20);
+  box-shadow: 0px 3.375px 3.375px 0px rgba(0, 0, 0, 0.25);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quantity-button button {
+  width: 33%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.quantity {
+  flex: 1;
+  text-align: center;
+  font-size: 16px;
+}
+
+.item {
+  width: 237.909px;
+  height: 177.911px;
+  background-color: #FFF;
+  margin-left: 98px;
+}
+
+.product p {
+  color: #000000;
+  word-spacing: 120px;
+  margin-left: 35px;
+  background-color: #FFF;
+  font-family: Inter;
+  font-size: 20.25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 80%;
+  height: 18.563px;
+}
+
+.product h3 {
+  color: #222121;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 115.673px;
+  height: 18.977px;
+  background-color: #FFF;
+  margin-left: 35px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+#save {
+  width: 67.271px;
+  position: relative;
+  top: -35px; /* Move the button up by 35px */
+  margin-left: 310px; /* Adjusted margin-left if needed */
+  height: 34.001px;
+  color: #FFF;
+  border-radius: 5.906px;
+  background: #4939FF;
+  border: none;
+  box-shadow: 0px 3.375px 3.375px 0px rgba(0, 0, 0, 0.25);
+}
+.rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+  background-color: white;
+  margin-left: 220px;
+}
+.rate:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.rate:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:30px;
+  color:#ccc;
+  background-color: white;
+}
+.rate:not(:checked) > label:before {
+  content: '★ ';
+}
+.rate > input:checked ~ label {
+  color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+.rate img{
+width: 150px;
+height: auto;
+margin-left: -200px;
+margin-top: 12px;
+background-color: white;
+}
+.button-container {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  align-items: center; /* Center the buttons vertically */
+}
+
+.button {
+    width: 48px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 5.906px;
+    background: #4939FF;
+    box-shadow: 0px 3.375px 3.375px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 5px; /* Adjusted margin for spacing */
+}
+
+
+  
