@@ -5,7 +5,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Nunito', sans-serif;
-  overflow-x: hidden;
 }
 
 body{
@@ -93,20 +92,20 @@ body{
 }
 
 /*Start of services styles*/
-.services .box-container{
+.OurServices .box-container{
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
 }
 
-.heading{
+.OurServices .heading{
   text-align: center;
   font-size: 3.5rem;
   padding: 1rem;
   color: Black;
 }
 
-  .services .box-container .box{
+  .OurServices .box-container .box{
     text-align: center;
     padding: 2rem;
     border: 1rem solid transparent;
@@ -117,8 +116,9 @@ body{
     flex:30rem;
     background: #fff;
     margin-top: 6rem;
+
   }
-  .services img{
+  .OurServices img{
     height: 12rem;
     width: 12rem;
     border-radius: 50%;
@@ -128,13 +128,13 @@ body{
     object-fit: cover;
   }
 
-.services .box-container .box h3{
+.OurServices .box-container .box h3{
   font-size: 1.5rem;
   color: Black;
   padding: .2rem 0;
 }
 
-.services .box-container .box p{
+.OurServices .box-container .box p{
   font-size: 1rem;
   color: Black;
   padding: 1rem 0;
@@ -216,6 +216,13 @@ body{
   margin: 3rem;
 }
 
+.Categories .heading{
+  text-align: center;
+  font-size: 3.5rem;
+  padding: 1rem;
+  color: Black;
+}
+
 .Categories .box-container .box{
   flex: 1 1 30rem;
   position: relative;
@@ -233,6 +240,7 @@ body{
   position: absolute;
   top: -100%; left: 0;
   transition: top 0.6s;
+  transition: .3s ease;
 }
 
 .Categories .box-container .box .content{
@@ -284,7 +292,6 @@ body{
 
 }
 
-
 @media (max-width: 768px){
 
   #menu-bar{
@@ -329,7 +336,7 @@ body{
   }
   
   .navbar{
-    position: fixed;
+    position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
@@ -342,7 +349,6 @@ body{
 
   #check:checked~.navbar{
     height: 25rem;
-    position: sticky;
   }
 
   .navbar a{
@@ -458,6 +464,13 @@ body{
     background: transparent;
     box-shadow: none;
   }
+
+  .services .heading{
+  text-align: center;
+  font-size: 3.5rem;
+  padding: 1rem;
+  color: Black;
+}
 
   .services .box-container .boxs{
     text-align: center;
