@@ -199,20 +199,6 @@ height: 55px;
 }
 
   
-  .image {
-    opacity: 0.8;
-    width: 383.906px;
-    height: 227.813px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 74px;
-    color: #000;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
   .dairy {
     background-image: url("Images/pexels-nastyasensei-821365.jpg");
   }

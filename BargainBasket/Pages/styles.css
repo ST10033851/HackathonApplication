@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Nunito', sans-serif;
+  overflow-x: hidden;
 }
 
 body{
@@ -212,6 +213,7 @@ body{
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
+  margin: 3rem;
 }
 
 .Categories .box-container .box{
@@ -268,9 +270,15 @@ body{
     font-size: 1.2rem;
   }
 
+  .box-option h1 {
+    color: white;
+    font-size: 20px !important;
+  }
+
   .home .image{
     justify-content: center;
   }
+
 }
 
 
@@ -318,7 +326,7 @@ body{
   }
   
   .navbar{
-    position: absolute;
+    position: fixed;
     top: 100%;
     left: 0;
     width: 100%;
@@ -331,6 +339,7 @@ body{
 
   #check:checked~.navbar{
     height: 25rem;
+    position: sticky;
   }
 
   .navbar a{
@@ -340,10 +349,137 @@ body{
     text-align: center;
   }
 
+  .box-option {
+    width: 500vh;
+    height: 60vh;
+    background: linear-gradient(180deg, #3455eb, #4ddeeb);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 27px;
+    margin-left: 75px;
+    margin-right: 75px;
+    display: flex;
+    align-items: center;
+  }
+
+  .box-option h1 {
+    color: white;
+    font-size: 20px !important;
+  }
+  
+  .box-option .content {
+    padding: 20px;
+  }
+
+  .box-image {
+    display: none;
+  }
+
+  .search-input {
+  border: none;
+  background-color: transparent;
+  width: 8vh;
+  padding: 5px;
+  text-indent: 10px;
+}
 
 }
 
+/*Kaushil Styles*/
+.box-option {
+    position: relative;
+    margin-top: 40px;
+    width: 500vh;
+    height: 60vh;
+    background: linear-gradient(180deg, #3455eb, #4ddeeb);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 27px;
+    margin-left: 75px;
+    margin-right: 75px;
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+}
 
+.box-option h1 {
+  margin: 0;
+  color: #000;
+  font-size: 50px auto;
+  margin-left: 30px;
+}
+
+.search {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  background-color: white;
+  border-radius: 10px;
+  height: 50px;
+}
+
+.search-input {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  padding: 5px;
+  text-indent: 10px;
+  margin-right: 3px;
+  
+}
+
+.search-button {
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .search-button img {
+    height: 40.5px;
+    width: 40.5px;
+    border-radius: 10px;
+  }
+
+  .box-image{
+    max-width: 70%;
+    height: auto;
+  }
+
+  .boxs .home-box-image{
+    height: 20rem;
+    width: 30rem;
+    margin-top: 30px;
+    border-radius: 10%;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .services .box-container .boxs{
+    text-align: center;
+    padding: 2rem;
+    margin-left: 2rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    flex:30rem;
+    margin-top: 6rem;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: transform 0.2s;
+  }
+
+  .services .box-container .boxs:hover{
+    transform: scale(1.1);
+  }
+
+  .boxs h3{
+    font-size: 30px;
+  }
 
 
 /* Avish css*/

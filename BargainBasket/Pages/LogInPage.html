@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inter:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="/BargainBasket/scripts/script.js"></script>
     <title>Log In</title>
   </head>
@@ -34,20 +34,23 @@
     <div class="CreateAccount">
       Get back to Saving Now !
     </div>
-    <form class="form">
-      <p class="title">Login </p>
-      <p class="message">Login now and get ready to SAVE ! </p>
-      <h3 style="font-family: Poppins; color: red;">Invalid username or password !</h3>
+    <form class="form" id="registrationForm" action="/" method="post">
+      <p class="title">Register</p>
+      <p class="message">Signup now and get ready to SAVE!</p>
       <label>
-          <input class="input" type="text" placeholder="" required="">
+          <input class="input" type="email" name="email" placeholder="" required>
+          <span>Email</span>
+      </label>
+      <label>
+          <input class="input" type="text" name="username" placeholder="" required>
           <span>Username</span>
-      </label> 
+      </label>
       <label>
-          <input class="input" type="password" placeholder="" required="">
+          <input class="input" type="password" name="password" placeholder="" required>
           <span>Password</span>
       </label>
-      <button class="submit">Submit</button>
-      <p class="signin">Dont have an account ? <a href="SignUpPage.html" style="text-decoration: none;">Sign Up</a> </p>
+      <button class="submit" type="submit">Submit</button>
+      <p class="signin">Already have an account? <a href="LogInPage.html" style="text-decoration: none;">Sign In</a></p>
   </form>
   <br>
   <br>
