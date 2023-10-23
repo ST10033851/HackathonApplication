@@ -35,3 +35,23 @@ app.post("/", function(req, res){
 app.listen(3000, function(){
     console.log("server is running on 3000");
 })
+
+//Kaushils script for Home And Product Pages
+
+document.querySelector('.product-grid').addEventListener('click', function (event) {
+    if (event.target.classList.contains('decrease')) {
+      // User clicked the decrease button
+      const quantityElement = event.target.nextElementSibling;
+      let currentQuantity = parseInt(quantityElement.textContent, 10);
+      if (currentQuantity > 0) {
+        quantityElement.textContent = currentQuantity - 1;
+      }
+    } else if (event.target.classList.contains('increase')) {
+      // User clicked the increase button
+      const quantityElement = event.target.previousElementSibling;
+      let currentQuantity = parseInt(quantityElement.textContent, 10);
+      quantityElement.textContent = currentQuantity + 1;
+    }
+  });
+
+  

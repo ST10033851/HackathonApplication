@@ -3,28 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../HomeStyle.css">
+   
+    <link rel="stylesheet" href="styles.css">
+    <link rel = "stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <script src="scr"></script>
     <title>Bargain Basket - Products Page</title>
 </head>
 <body>
-    <div class="navbar">
-        <a href="HomePage.html">
-            <img src="\BargainBasket\Images\bargain-basket-high-resolution-logo-color-on-transparent-background 2.png" alt="Logo" class="logo">
+    <header class="header">
 
-        </a>
-        <a href="HomePage.html" class="nav-link">Homes</a>
-        <a href="ProductsPage.html" class="nav-link">Products</a>
-        <a href="AboutPage.html" class="nav-link">About</a>
-        <a href="ContactPage.html" class="nav-link">Contact</a>
-        <a href="CartPage.html">
-          <img src="\BargainBasket\Images\5ade88a5358a9102e8435b90b8105cc8.png" alt="" class="cart">
-        </a>
-        <a href="Account.html">
-            <img src="\BargainBasket\Images\forge-icon (7).svg" alt="Image" class="icon">
-        </a>
-      </div>
+    <a href="#" class="logo">
+        <img src="/BargainBasket/Images/bargain-basket-high-resolution-logo-color-on-transparent-background 2.png" alt="" width="300" height="50">
+    </a>
+    <input type="checkbox" id="check">
 
-      <div class="product-grid">
+    <label for="check" id="menu-bar">
+        <div class="fas fa-bars" id="menu-open"></div>
+        <div class="fas fa-times" id="menu-close"></div>
+    </label>
+    
+
+    <nav class="navbar">
+        <a href="HomePage.html">Home </a>
+        <a href="ProductsPage.html">Products </a>
+        <a href="AboutUsPage.html">About </a>
+        <a href="#">Contact </a>
+        <a href="Mylist.html"> <img src="/BargainBasket/Images/basket.png" height=50 width="60" alt=""></a>
+        <a href="ProfilePage.html"> <img src="/BargainBasket/Images/user.png" height=40 width="40" alt=""></a>
+    </nav>
+</header>
+
+      <div class="product-grid" style="margin-top: 170px;">
         
         <div class="product">
             <div class="rate">
@@ -260,11 +269,17 @@
     </div>
 
 
-      <footer>
-        <img src="\BargainBasket\Images\bargain-basket-high-resolution-logo-color-on-transparent-background 2.png" alt="">
-        <hr>
-        <p>&copy; 2023 Bargain Basket - All rights reserved</p>
-      </footer>
+    <section class="footer">
+
+      <a href="">
+          <img src="/BargainBasket/Images/bargain-basket-high-resolution-logo-color-on-transparent-background 2.png" alt="" height="90" width="500">
+      </a>
+      
+      <hr width="100%"/>
+    
+      <h1 class="credit"> C 2023 Bargain Basket-all rights reserved</h1>
+    </section>
+    
 
 </body>
 </html>
