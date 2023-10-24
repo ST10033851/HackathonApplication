@@ -9,7 +9,7 @@
 
 body{
   min-height: 100vh;
-  background-image: url("/BargainBasket/Images/Vector.svg");
+  background-image: url("Images/Vector.svg");
   background-repeat: no-repeat;
   background-size: 80% auto;
   background-position: right center;
