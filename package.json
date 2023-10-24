@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/ST10033851/HackathonApplication/issues"
   },
-  "homepage": "https://github.com/ST10033851/HackathonApplication#readme"
+  "homepage": "https://github.com/ST10033851/HackathonApplication#readme",
+  "keywords": [],
+  "dependencies": {
+    "nodemailer": "^6.9.7"
+  }
 }
