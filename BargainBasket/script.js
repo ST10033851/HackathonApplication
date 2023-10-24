@@ -10,7 +10,29 @@ app.use(express.static(__dirname + '/Pages'));
 
 mongoose.connect("mongodb+srv://bargainbasket:bargainbasket123@bargainbasketcluster.gq7cemq.mongodb.net/BargainBasketDB")
 
-const usersSchema = {
+/* const productsSchema = {
+  _id: Number,
+  Name: String,
+  Category: String,
+  Price: Number,
+  ShopID: Number
+} */
+
+/* const Product = mongoose.model("Product", productsSchema); */
+
+/* const productsToInsert = [
+  
+]; */
+
+/* Product.insertMany(productsToInsert)
+  .then((result) => {
+    console.log("Products inserted successfully.");
+  })
+  .catch((err) => {
+    console.error(err);
+  }); */
+
+  const usersSchema = {
     email: String,
     username: String,
     password: String
@@ -19,17 +41,37 @@ const usersSchema = {
 const User = mongoose.model("User", usersSchema);
 
 app.get("/", function(req, res){
-    res.sendFile(__dirname + "/Pages/LoginPage.html");
+    res.sendFile(__dirname + "/Pages/LandingPage.html");
 })
 
-app.post("/", function(req, res){
+// Handle login POST request
+app.post("/login", async function (req, res) {
+  const username = req.body.username;
+  const password = req.body.password;
+
+  try {
+    const user = await User.findOne({ username: username, password: password });
+
+    if (user) {
+      // Authentication succeeded, redirect to the homepage or any other protected page.
+      res.redirect("/HomePage.html");
+    } else {
+      res.redirect("/?error=authFailed");
+    }
+  } catch (err) {
+    console.error(err);
+    res.redirect("/login.html"); // Handle the error as needed
+  }
+});
+
+app.post("/register", function(req, res){
     let newUser = new User ({
         email:  req.body.email,
         username: req.body.username,
         password: req.body.password
     });
     newUser.save();
-    res.redirect("/LandingPage.html");
+    res.redirect("/HomePage.html");
 })
 
 app.listen(3000, function(){
@@ -38,7 +80,7 @@ app.listen(3000, function(){
 
 //Kaushils script for Home And Product Pages
 
-document.querySelector('.product-grid').addEventListener('click', function (event) {
+/* document.querySelector('.product-grid').addEventListener('click', function (event) {
     if (event.target.classList.contains('decrease')) {
       // User clicked the decrease button
       const quantityElement = event.target.nextElementSibling;
@@ -52,6 +94,6 @@ document.querySelector('.product-grid').addEventListener('click', function (even
       let currentQuantity = parseInt(quantityElement.textContent, 10);
       quantityElement.textContent = currentQuantity + 1;
     }
-  });
+  }); */
 
   
