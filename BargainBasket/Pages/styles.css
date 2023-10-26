@@ -846,8 +846,8 @@ body {
 }
 
 .product p {
+  word-spacing: 110px;
   color: #000000;
-  word-spacing: 120px;
   margin-left: 35px;
   font-size: 18px;
   font-style: normal;
