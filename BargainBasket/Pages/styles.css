@@ -910,10 +910,12 @@ body {
 }
 
 .product p {
-  word-spacing: 110px;
+  word-spacing: 130px;
+  padding-top: 15px;
+  padding-bottom: 25px;
   color: #000000;
   margin-left: 35px;
-  font-size: 18px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -1134,4 +1136,8 @@ body {
   .footer h1 {
     font-size: 15px;
   }
+}
+.prices{
+  color: red;
+  word-spacing: 0px;
 }
