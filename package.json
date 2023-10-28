@@ -4,7 +4,8 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon BargainBasket/script.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,9 @@
   "homepage": "https://github.com/ST10033851/HackathonApplication#readme",
   "keywords": [],
   "dependencies": {
-    "nodemailer": "^6.9.7"
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.7",
+    "nodemon": "^3.0.1"
   }
 }

@@ -4,6 +4,9 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const path = require('path');
 
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'Pages', 'views'));
+
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(express.static(__dirname + '/Pages'));
@@ -38,13 +41,21 @@ mongoose.connect("mongodb+srv://bargainbasket:bargainbasket123@bargainbasketclus
     password: String
 }
 
+const productsSchema = {
+  Name: String,
+  Category: String,
+  Price: Number,
+  ShopID: Number,
+  imageURL: String,
+}
+
+const Product = mongoose.model('Product', productsSchema);
 const User = mongoose.model("User", usersSchema);
 
 app.get("/", function(req, res){
     res.sendFile(__dirname + "/Pages/LandingPage.html");
 })
 
-// Handle login POST request
 app.post("/login", async function (req, res) {
   const username = req.body.username;
   const password = req.body.password;
@@ -53,14 +64,14 @@ app.post("/login", async function (req, res) {
     const user = await User.findOne({ username: username, password: password });
 
     if (user) {
-      // Authentication succeeded, redirect to the homepage or any other protected page.
+      
       res.redirect("/HomePage.html");
     } else {
       res.redirect("/?error=authFailed");
     }
   } catch (err) {
     console.error(err);
-    res.redirect("/login.html"); // Handle the error as needed
+    res.redirect("/login.html");
   }
 });
 
@@ -73,6 +84,23 @@ app.post("/register", function(req, res){
     newUser.save();
     res.redirect("/HomePage.html");
 })
+
+app.get('/products', async (req, res) => {
+  const page = parseInt(req.query.page) || 1;
+  const productsPerPage = 9;
+
+  const skip = (page - 1) * productsPerPage;
+  const products = await Product.find({}).skip(skip).limit(productsPerPage);
+
+  const totalProducts = await Product.countDocuments();
+  const hasNextPage = skip + products.length < totalProducts;
+
+  res.render('ProductsPage', {
+      productsList: products,
+      currentPage: page,
+      hasNextPage: hasNextPage
+  });
+});
 
 app.listen(3000, function(){
     console.log("server is running on 3000");
