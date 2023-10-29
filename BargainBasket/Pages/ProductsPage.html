@@ -13,45 +13,62 @@
   </head>
   <body>
     <header class="header">
-
       <a href="HomePage.html" class="logo">
-          <img src="Images/bargain-basket-high-resolution-logo-color-on-transparent-background 2.png" alt="" width="300" height="50">
+        <img
+          src="Images/bargain-basket-high-resolution-logo-color-on-transparent-background 2.png"
+          alt=""
+          width="300"
+          height="50"
+        />
       </a>
-      <input type="checkbox" id="check">
+      <input type="checkbox" id="check" />
 
       <label for="check" id="menu-bar">
-          <div class="fas fa-bars" id="menu-open"></div>
-          <div class="fas fa-times" id="menu-close"></div>
+        <div class="fas fa-bars" id="menu-open"></div>
+        <div class="fas fa-times" id="menu-close"></div>
       </label>
-      
 
       <nav class="navbar">
-          <a href="HomePage.html">Home </a>
-          <a href="ProductsPage.html">Products </a>
-          <a href="AboutUsPage.html">About </a>
-          <a href="ContactUs.html">Contact </a>
-          <a href="Mylist.html"> <img src="/BargainBasket/Pages/Images/basket.png" height=50 width="60" alt=""></a>
-          <a href="ProfilePage.html"> <img src="/BargainBasket/Pages/Images/user.png" height=40 width="40" alt=""></a>
+        <a href="HomePage.html">Home </a>
+        <a href="ProductsPage.html">Products </a>
+        <a href="AboutUsPage.html">About </a>
+        <a href="ContactUs.html">Contact </a>
+        <a href="Mylist.html">
+          <img
+            src="/BargainBasket/Pages/Images/basket.png"
+            height="50"
+            width="60"
+            alt=""
+        /></a>
+        <a href="ProfilePage.html">
+          <img
+            src="/BargainBasket/Pages/Images/user.png"
+            height="40"
+            width="40"
+            alt=""
+        /></a>
       </nav>
-  </header>
- 
-  <div class="paste-button">
-    <button class="filterbutton">Filter By &nbsp; ▼</button>
-    <div class="dropdown-content">
-      <a id="top" href="#">Price: Low to High</a>
-      <a id="middle" href="#">Price: High to Low</a>
-      <a id="bottom" href="#">Ratings</a>
-    </div>
-  </div>
-  
-      <div class="product-grid" style="margin-top: 170px;">
-        
-           
+    </header>
+
+    <div class="paste-button">
+      <button class="filterbutton">Filter By &nbsp; ▼</button>
+      <div class="dropdown-content">
+        <a id="top" href="#">Price: Low to High</a>
+        <a id="middle" href="#">Price: High to Low</a>
+        <a id="bottom" href="#">Ratings</a>
       </div>
+    </div>
+
+    <div class="product-grid" style="margin-top: 170px"></div>
 
     <section class="footer">
       <a href="HomePage.html">
-          <img src="Images/bargain-basket-high-resolution-logo-color-on-transparent-background 2.png" alt="" height="90" width="500">
+        <img
+          src="Images/bargain-basket-high-resolution-logo-color-on-transparent-background 2.png"
+          alt=""
+          height="90"
+          width="500"
+        />
       </a>
 
       <hr width="100%" />
@@ -84,29 +101,28 @@
 </script>
 
 <script>
- document.addEventListener("DOMContentLoaded", function () {
-  // Get all the star rating containers with the class "rate"
-  const ratingContainers = document.querySelectorAll(".rate");
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get all the star rating containers with the class "rate"
+    const ratingContainers = document.querySelectorAll(".rate");
 
-  // Iterate through each rating container
-  ratingContainers.forEach((container, index) => {
-    // Get all the radio input elements in the current container
-    const ratingInputs = container.querySelectorAll('input[type="radio"]');
+    // Iterate through each rating container
+    ratingContainers.forEach((container, index) => {
+      // Get all the radio input elements in the current container
+      const ratingInputs = container.querySelectorAll('input[type="radio"]');
 
-    // Add a change event listener to each radio input element
-    ratingInputs.forEach((input) => {
-      input.addEventListener("change", (event) => {
-        // Prevent the default behavior, which is to scroll the page
-        event.preventDefault();
-        
-        // Set the value of the clicked input element to its value attribute
-        container.setAttribute("data-rating", input.value);
+      // Add a change event listener to each radio input element
+      ratingInputs.forEach((input) => {
+        input.addEventListener("change", (event) => {
+          // Prevent the default behavior, which is to scroll the page
+          event.preventDefault();
 
-        // Add a return false statement to prevent any further default behavior
-        return false;
+          // Set the value of the clicked input element to its value attribute
+          container.setAttribute("data-rating", input.value);
+
+          // Add a return false statement to prevent any further default behavior
+          return false;
+        });
       });
     });
   });
-});
-
 </script>
