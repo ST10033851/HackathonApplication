@@ -286,6 +286,12 @@ body {
   transform: translateY(100%);
 }
 
+.navbar .user{
+  border-radius: 50%;
+  border-color: black;
+  border: 2px solid black;
+}
+
 /*media queries*/
 @media (max-width: 1210px) {
   .navbar a {
@@ -855,12 +861,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 67px 74px;
+  margin: 50px;
   /* Adjust these values as needed */
 }
 
 .product {
-  width: calc(33.33% - 50px);
+  width: calc(25% - 50px);
   /* 3 columns with 50px spacing between */
   margin-bottom: 50px;
   /* Adjust this for the space between rows */
@@ -960,6 +966,8 @@ body {
   opacity: .8;
   cursor: pointer;
 }
+
+
 
 .rate {
   float: left;
