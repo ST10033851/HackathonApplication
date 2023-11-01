@@ -887,7 +887,7 @@ body {
 .quantity-button {
   display: flex;
   align-items: center;
-  margin-left: 230px;
+  margin-left: 130px;
   width: 67.271px;
   height: 34.001px;
   border-radius: 5.906px;
@@ -916,7 +916,7 @@ body {
   width: 237.909px;
   height: 177.911px;
   background-color: #FFF;
-  margin-left: 98px;
+  margin-left: 40px;
 }
 
 .product p {
@@ -952,7 +952,7 @@ body {
   position: relative;
   top: -35px;
   /* Move the button up by 35px */
-  margin-left: 310px;
+  margin-left: 200px;
   /* Adjusted margin-left if needed */
   height: 34.001px;
   color: #FFF;
@@ -1135,6 +1135,7 @@ body {
     height: auto;
     /* Adjust the height as needed for smaller screens */
   }
+  
 
   .footer img {
     margin-top: 2rem;
