@@ -85,7 +85,7 @@ app.post("/register", function(req, res){
 });
 
 app.post('/payments', async function(req, res){
-
+  res.redirect('Payment.html');
 });
 
 app.post("/groceryList", function(req, res){
