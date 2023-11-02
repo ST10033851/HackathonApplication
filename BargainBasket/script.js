@@ -70,7 +70,7 @@ app.post("/login", async function (req, res) {
     }
   } catch (err) {
     console.error(err);
-    res.redirect("/login.html");
+    res.redirect("/LogInPage.html");
   }
 });
 
