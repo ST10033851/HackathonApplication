@@ -10,10 +10,10 @@
 
 body {
   min-height: 100vh;
-  background-image: url("Images/Vector.svg");
-  background-repeat: no-repeat;
-  background-size: 80% auto;
-  background-position: right center;
+  background-image: url("Images/BackgroundImages/macaroon.png"), url('Images/BackgroundImages/toast.png'), url('Images/BackgroundImages/pie.png');
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 800px 800px, 700px 800px, 1000px 1000px;
+  background-position: left top, center right, -200px bottom;
   overflow-x: hidden;
 }
 
@@ -288,8 +288,6 @@ body {
 
 .navbar .user{
   border-radius: 50%;
-  border-color: black;
-  border: 2px solid black;
 }
 
 /*media queries*/

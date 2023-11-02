@@ -10,16 +10,29 @@
     <title>Profile</title>
 </head>
 <style !important>
-    .Welcomebanner {
-  width: 80%;
-  left: 10%;
-  top: 150px;
-  height: 100%;
+.box-option2 {
   position: relative;
-  background: linear-gradient(98deg, #0D2C4C 0%, #DFCFF7 100%);
-  box-shadow: 8px 8px 48px 8px rgba(0, 0, 0, 0.08);
-  border-radius: 24px;
-  overflow: hidden;
+  margin-top: 40px;
+  width: 500vh;
+  height: 60vh;
+  background: rgba( 133, 217, 255, 0.6 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 15.5px );
+  -webkit-backdrop-filter: blur( 15.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  margin-left: 75px;
+  margin-right: 75px;
+  display: flex;
+  align-items: center;
+  overflow-y: hidden;
+}
+
+.box-option2 h1 {
+  margin: 0;
+  color: #000;
+  font-size: 50px auto;
+  margin-left: 30px;
 }
 
 .September42023 {
@@ -89,11 +102,11 @@
 }
 
 .Informationbanner {
-  width: 90%;
-  height: 100%;
   position: relative;
-  top: 200px;
-  left: 2.5%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-left: 180px;
 }
 
 .Rectangle122 {
@@ -101,10 +114,14 @@
   height: 305px;
   left: 0px;
   top: 0px;
-  position: absolute;
-  background: linear-gradient(98deg, #0D2C4C 0%, #DFCFF7 100%);
-  box-shadow: 8px 8px 48px 8px rgba(0, 0, 0, 0.08);
-  border-radius: 24px;
+  position: relative;
+  display: flex;
+  background: rgba( 133, 217, 255, 0.6 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 15.5px );
+-webkit-backdrop-filter: blur( 15.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .Rectangle5 {
@@ -115,6 +132,7 @@
   position: absolute;
   background: white;
   border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .Number {
@@ -136,6 +154,7 @@
   position: absolute;
   background: #369FFF;
   border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .GroceryListsMade {
@@ -157,6 +176,7 @@
   position: absolute;
   background: white;
   border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .TotalSpent {
@@ -180,6 +200,7 @@
   position: absolute;
   background: #369FFF;
   border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .TotalSpentt {
@@ -201,6 +222,7 @@
   position: absolute;
   background: white;
   border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .money {
@@ -224,6 +246,8 @@
   position: absolute;
   background: #369FFF;
   border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
 }
 
 .TotalSaved {
@@ -245,6 +269,7 @@
   position: absolute;
   background: white;
   border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .Rectangle322 {
@@ -255,36 +280,37 @@
   position: absolute;
   background: #369FFF;
   border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .btn {
-  --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+  --border-color: linear-gradient(98deg, #4976f3 0%, #7b26fa 100%);
   --border-width: .125em;
   --curve-size: .5em;
   --blur: 30px;
-  --bg: linear-gradient(98deg, #0D2C4C 0%, #DFCFF7 100%);
+  --bg: linear-gradient(98deg, #5b83f0 0%, #7b26fa 100%);
   --color: #ffffff;
   color: var(--color);
-  position: absolute;
-  top: 240px; 
-  right: 80px; 
-  isolation: isolate;
-  display: inline-grid;
-  place-content: center;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-right: 40px;
+  cursor: pointer;
   padding: .5em 1.5em;
   font-size: 17px;
   border: 0;
-  text-transform: uppercase;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, .6);
   clip-path: polygon(
-            0% var(--curve-size),
-            var(--curve-size) 0,
-            100% 0,
-            100% calc(100% - var(--curve-size)),
-            calc(100% - var(--curve-size)) 100%,
-            0 100%);
+    0% var(--curve-size),
+    var(--curve-size) 0,
+    100% 0,
+    100% calc(100% - var(--curve-size)),
+    calc(100% - var(--curve-size)) 100%,
+    0 100%
+  );
   transition: color 250ms;
 }
+
 
 .btn::after,
 .btn::before {
@@ -400,55 +426,58 @@
 <!-- Header -->
 
 <!-- Welcome Banner-->
-<div class="Welcomebanner">
-    <div class="September42023">September 4, 2023</div>
-    <div class="Text">
-      <div class="WelcomeBackJohn">Welcome User123!</div>
-      <div class="KeepTrackOfYourInformationInOnePlace">Keep track of all your information in one place</div>
+<section class="home">
+  <div class="box-option2">
+    <div class="content">
+      <h1>Welcome user</h1>
+      <h1>Keep track of all your information in one place</h1>
     </div>
-    <div class="BannerImage">
-      <img src="Images/top-view-assortment-vegetables-paper-bag 1.svg">
-    </div>
+    <img src="Images/top-view-assortment-vegetables-paper-bag 1.svg" alt="" class="box-image">
   </div>
+</section>
   
 <!-- Welcome Banner -->
 
 <!-- Information Banner -->
-<div class="Informationbanner">
-    <div class="Rectangle122"></div>
-    <div class="Rectangle5"></div>
-    <div class="Number">12</div>
-    <div class="Rectangle29"></div>
-    <div class="rectanglemid"></div>
-    <div class="GroceryListsMade">Grocery Lists made</div>
-    <div class="Rectangle7"></div>
-    <div class="TotalSpent">R1472.00</div>
-    <div class="Rectangle322"></div>
-    <div class="TotalSpentt">Total Spent</div>
-    <div class="money">R500.00</div>
-    <div class="Rectangle32"></div>
-    <div class="TotalSaved">Total Saved</div>
-    <a href="HistoryPage.html" style="text-decoration: none; text-decoration: transparent; cursor: pointer;">
-      <button class="btn">
-        GroceryList History ->
+<section>
+    <div class="Informationbanner">
+      <div class="Rectangle122"></div>
+      <div class="Rectangle5"></div>
+      <div class="Number">12</div>
+      <div class="Rectangle29"></div>
+      <div class="rectanglemid"></div>
+      <div class="GroceryListsMade">Grocery Lists made</div>
+      <div class="Rectangle7"></div>
+      <div class="TotalSpent">R1472.00</div>
+      <div class="Rectangle322"></div>
+      <div class="TotalSpentt">Total Spent</div>
+      <div class="money">R500.00</div>
+      <div class="Rectangle32"></div>
+      <div class="TotalSaved">Total Saved</div>
+      
+  
+  </div>
+  <a href="HistoryPage.html" style="text-decoration: none; text-decoration: transparent; cursor: pointer;">
+    <button class="btn">
+      GroceryList History ->
     </button>
-    </a>
-</div>
+  </a>
+
+</section>
+
 <!-- Information Banner -->
 
 <!-- footer -->
-<div class="footercontainer">
-    <section class="footer">
-    
-      <a href="HomePage.html">
-          <img src="Images/bargain-basket-high-resolution-logo-color-on-transparent-background 2.png" alt="" height="90" width="500">
-      </a>
-      
-      <hr width="100%"/>
-    
-      <h1 class="credit">© 2023 Bargain Basket - All rights reserved</h1>
-    </section>
-</div>
+<section class="footer">
+
+  <a href="HomePage.html">
+      <img src="Images/bargain-basket-high-resolution-logo-color-on-transparent-background 2.png" alt="" height="90" width="500">
+  </a>
+  
+  <hr width="100%"/>
+
+  <h1 class="credit"> C 2023 Bargain Basket-all rights reserved</h1>
+</section>
 <!-- footer -->
 </body>
 </html>
