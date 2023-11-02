@@ -1,9 +1,0 @@
-{
-    "rewrites": [
-      {
-        "source": "/(.*)",
-        "destination": "/hackathon/bargainbasket/$1"
-      }
-    ]
-  }
-  
