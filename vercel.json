@@ -1,10 +1,5 @@
 {
-    "name": "hackathonapplication",
-    "version": 2,
-    "builds": [{ "src": "script.js", "use": "@vercel/node" }],
-    "routes": [{ "src": "/api/(.*)", "dest": "script.js" }],
-    "env": {
-      "NODE_ENV": "production"
-    }
-  }
-  
+    "rewrites": [
+        {"source": "/(.*)", "destination": "/"}
+    ]
+}
